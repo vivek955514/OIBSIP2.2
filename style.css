@@ -1,0 +1,281 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0d0505;
+}
+header h1{
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+
+}
+header p{
+    font-family: "Times New Roman", Times, serif;
+    text-transform: capitalize;
+    font-size: 40px;
+
+}
+
+
+header {
+    height: 100vh;
+    text-align: center;
+    background-color: #0d0505;
+    padding: 20px;
+}
+
+header img {
+    width: 250px;
+    border-radius: 50%;
+}
+header h1{
+    color: #f4f4f4;
+}
+header p{
+    color: #f4f4f4;
+}
+
+nav {
+    background-color: #767272;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+}
+#about{
+    width: 100%;
+    padding: 100px 0px;
+
+
+
+}
+.line{
+    background-color: #f4f4f4;
+    height: 1px;
+}
+#about img{
+    height: auto;
+    width: 330px;
+}
+.about-text{
+    width: 550px;
+}
+.about-text h2{
+    color: #f4f4f4;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.about-text h5{
+    color: #f4f4f4;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+
+}
+.about-text p{
+   letter-spacing: 1px;
+   line-height: 18px;
+   font-size: 18px;
+   margin-bottom: 45px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    background-color: rgb(224, 15, 15);
+    color: #f4f4f4;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+section #about h2,p {
+    
+    color: #f4f4f4;   
+}
+h2{
+    color: #f4f4f4;
+}
+h3{
+    color: #f4f4f4;
+}
+
+section#about, section#Skills, section#projects {
+    background-color: #150c0c;
+    height: 100vh;
+}
+
+.project {
+
+
+    margin: 50px 50px;
+    
+
+}
+.projects{
+    position: relative;
+    
+    top: 100px;
+
+}
+#projects h2{
+   text-align: center;
+   margin-left: 20px;
+}
+#contact h2{
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Skills Section Styling */
+/* Style for the Skills section */
+#Skills {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff9f9;
+}
+
+#Skills ul {
+    list-style: none;
+    padding: 0;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Skills ul li {
+    border-radius: 10px;
+    background-color: #08090a; /* Primary color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+#Skills ul li:hover {
+    background-color: #0056b3; /* Darker primary color */
+    transform: scale(1.1);
+}
+
+/* Keyframes for animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add delay to each list item for staggered animation effect */
+#Skills ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#Skills ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#Skills ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#Skills ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+#Skills ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+#Skills ul li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Add more nth-child rules if you have more skills */
+
+
+#contact{
+    margin-top: 300px;
+    position: relative;
+   
+    
+   
+    background-color: rgb(7, 10, 10);
+    
+
+}
